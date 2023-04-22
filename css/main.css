@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**********************************************************************************************************************************************/
+
+/*Navegación*/
+header {
+       /*width-ancho /// height-alto*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    /*Justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+/*La clase se llama con un punto*/
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*Eliminar puntitos*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .nav-right-section a {
+    margin-right: 25px;
+    color: rgb(21, 21, 21);
+}
+
+/*Ícono de menú*/
+nav .nav-right-section .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+/*Ícono de mi foto personal*/
+nav .nav-right-section .foto {
+    background-image: url(https://lh3.googleusercontent.com/ogw/AAEL6shf_cU-uloyFKVL_h1p0YSM6wWYzBJ87hdYy4QnFw=s32-c-mo);
+    width: 35px;
+    height: 35px;
+    border-radius: 60%;
+    background-size: contain;
+    margin-left: 20px;
+}
+/************************************************************************************************************************/
+/*Main*/
+main {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*Sección logo*/
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+  
+/*Logo google*/
+main .main-logo img {
+    width: 310px;
+    height: 95px;
+}
+
+/*Sección input*/
+main .main-input {
+    width: 580px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container {
+    width: 580px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 1px #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /*Evitar que se repita el ícono por alguna razón*/
+    background-position: center;
+    background-size: contain;
+    width: 10px;
+    background-repeat: no-repeat;
+    height: 15px;
+    padding-right: 5%;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://cdn.discordapp.com/attachments/1078439993271398553/1091819945328914512/lens.png);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-left: 5%;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+    padding-top: 0.5%;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    border: 0;
+    height: 38px;
+    /*Fondo de botones*/
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /*Color de letras antes de hover*/
+    color: #3c4043;
+    /*Redondeamos botones*/
+    border-radius: 4px;
+    /*Margen interno*/
+    padding: 0 15px;
+    /*Margen entre botones*/
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+    }
+
+/*Efecto hover (como el input)*/
+main .main-buttons button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    /*Cambia borde al hacer hover*/
+    border: 1px solid #dadce0;
+    /*Cambia color letras (muy leve) al hacer hover*/
+    color: #202124;
+    cursor: pointer
+}
+
+/**********************************************************************************************************************************************/
+
+/*Footer*/
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    /*Footer dividido en 2 columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /*Posiciona el footer al final*/
+    bottom: 0;
+}
+
+footer div {
+    background-color: #f2f2f2;
+        font-size: 15px;
+        color: #70757a ;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        padding-left: 25px;
+        border-bottom: 1px solid #d1dce6;
+        bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+footer ul{
+    /*Afecta todos los lados del margen*/
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 18px;
+    font-size: 15px;
+}
+
+footer .footer-left {
+    justify-self: left;
+}
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    color: #70757a;
+    margin: 10px;
+}
+
+
